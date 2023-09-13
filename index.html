@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es" data-currency="EUR" data-lang="es" data-countrycode="es_ES"
+    data-rHash="eb9dc009821f5ebf31f56ec6ed3af8bd" dir="auto">
+
+<head>
+    <meta charset="UTF-8" />
+    <script>window.isCookieOptIn = false; window.whitelistedDomains = ["cdnmns\\.com", "hcaptcha", "youtube\\.com", "ytimg\\.com", "extra\\-cdn\\.com"];</script>
+    <script> var doNoTrack = localStorage.getItem('mono_donottrack'); window.YETT_WHITELIST = [/.*/]; window.YETT_UNBLOCKINLINE = true; if (window.isCookieOptIn && doNoTrack === null || String(doNoTrack) === 'true') { window.YETT_WHITELIST = [new RegExp('(' + window.location.host + '|^)/assets/js(?!/reseller/padigital(-test)?)'),].concat(window.whitelistedDomains.map(function (domain) { return new RegExp(domain); })); } !function (t, e) { "object" == typeof exports && "undefined" != typeof module ? e(exports) : "function" == typeof define && define.amd ? define(["exports"], e) : e((t = t || self).yett = {}) }(this, function (t) { "use strict"; window.MutationObserver || (window.MutationObserver = function (m) { function a(t) { this.i = [], this.m = t } function w(t) { var e, n = { type: null, target: null, addedNodes: [], removedNodes: [], previousSibling: null, nextSibling: null, attributeName: null, attributeNamespace: null, oldValue: null }; for (e in t) n[e] !== m && t[e] !== m && (n[e] = t[e]); return n } function o(r, i) { var a = l(r, i); return function (t) { var e = t.length; if (i.a && 3 === r.nodeType && r.nodeValue !== a.a && t.push(new w({ type: "characterData", target: r, oldValue: a.a })), i.b && a.b && k(t, r, a.b, i.f), i.c || i.g) var n = function (b, t, e, h) { function v(t, e, n, r, i) { var a, o, l, c = t.length - 1; for (i = -~((c - i) / 2); l = t.pop();)a = n[l.j], o = r[l.l], h.c && i && Math.abs(l.j - l.l) >= c && (b.push(w({ type: "childList", target: e, addedNodes: [a], removedNodes: [a], nextSibling: a.nextSibling, previousSibling: a.previousSibling })), i--), h.b && o.b && k(b, a, o.b, h.f), h.a && 3 === a.nodeType && a.nodeValue !== o.a && b.push(w({ type: "characterData", target: a, oldValue: o.a })), h.g && g(a, o) } function g(t, e) { for (var n, r, i, a, o, l = t.childNodes, c = e.c, u = l.length, s = c ? c.length : 0, d = 0, p = 0, f = 0; p < u || f < s;)(a = l[p]) === (o = (i = c[f]) && i.node) ? (h.b && i.b && k(b, a, i.b, h.f), h.a && i.a !== m && a.nodeValue !== i.a && b.push(w({ type: "characterData", target: a, oldValue: i.a })), r && v(r, t, l, c, d), h.g && (a.childNodes.length || i.c && i.c.length) && g(a, i), p++, f++) : (y = !0, n || (n = {}, r = []), a && (n[i = S(a)] || (n[i] = !0, -1 === (i = x(c, a, f, "node")) ? h.c && (b.push(w({ type: "childList", target: t, addedNodes: [a], nextSibling: a.nextSibling, previousSibling: a.previousSibling })), d++) : r.push({ j: p, l: i })), p++), o && o !== l[p] && (n[i = S(o)] || (n[i] = !0, -1 === (i = x(l, o, p)) ? h.c && (b.push(w({ type: "childList", target: e.node, removedNodes: [o], nextSibling: c[f + 1], previousSibling: c[f - 1] })), d--) : r.push({ j: i, l: f })), f++)); r && v(r, t, l, c, d) } var y; return g(t, e), y }(t, r, a, i); !n && t.length === e || (a = l(r, i)) } } function k(t, e, n, r) { for (var i, a, o = {}, l = e.attributes, c = l.length; c--;)a = (i = l[c]).name, r && r[a] === m || (u(e, i) !== n[a] && t.push(w({ type: "attributes", target: e, attributeName: a, oldValue: n[a], attributeNamespace: i.namespaceURI })), o[a] = !0); for (a in n) o[a] || t.push(w({ target: e, type: "attributes", attributeName: a, oldValue: n[a] })) } function l(t, r) { var i = !0; return function t(n) { var e = { node: n }; return !r.a || 3 !== n.nodeType && 8 !== n.nodeType ? (r.b && i && 1 === n.nodeType && (e.b = c(n.attributes, function (t, e) { return r.f && !r.f[e.name] || (t[e.name] = u(n, e)), t }, {})), i && (r.c || r.a || r.b && r.g) && (e.c = function (t, e) { for (var n = [], r = 0; r < t.length; r++)n[r] = e(t[r], r, t); return n }(n.childNodes, t)), i = r.g) : e.a = n.nodeValue, e }(t) } function S(e) { try { return e.id || (e.mo_id = e.mo_id || n++) } catch (t) { try { return e.nodeValue } catch (t) { return n++ } } } function c(t, e, n) { for (var r = 0; r < t.length; r++)n = e(n, t[r], r, t); return n } function x(t, e, n, r) { for (; n < t.length; n++)if ((r ? t[n][r] : t[n]) === e) return n; return -1 } a._period = 30, a.prototype = { observe: function (t, e) { for (var n = { b: !!(e.attributes || e.attributeFilter || e.attributeOldValue), c: !!e.childList, g: !!e.subtree, a: !(!e.characterData && !e.characterDataOldValue) }, r = this.i, i = 0; i < r.length; i++)r[i].s === t && r.splice(i, 1); e.attributeFilter && (n.f = c(e.attributeFilter, function (t, e) { return t[e] = !0, t }, {})), r.push({ s: t, o: o(t, n) }), this.h || function (n) { !function t() { var e = n.takeRecords(); e.length && n.m(e, n), n.h = setTimeout(t, a._period) }() }(this) }, takeRecords: function () { for (var t = [], e = this.i, n = 0; n < e.length; n++)e[n].o(t); return t }, disconnect: function () { this.i = [], clearTimeout(this.h), this.h = null } }; var t = document.createElement("i"); t.style.top = 0; var u = (t = "null" != t.attributes.style.value) ? function (t, e) { return e.value } : function (t, e) { return "style" !== e.name ? e.value : t.style.cssText }, n = 1; return a }(void 0)); function a(e, t) { var n = e && (!t || t !== b) && (!v.blacklist || v.blacklist.some(function (t) { return t.test(e) })) && (!v.whitelist || v.whitelist.every(function (t) { return !t.test(e) })); return n && -1 === r.indexOf(e) && (r.push(e), console.info("Script src '".concat(e, "' is blocked"))), n } function f(t) { var e = t.getAttribute("src"); return v.blacklist && v.blacklist.every(function (t) { return !t.test(e) }) || v.whitelist && v.whitelist.some(function (t) { return t.test(e) }) } var b = "javascript/blocked", h = window.YETT_UNBLOCKINLINE || !1, v = { blacklist: window.YETT_BLACKLIST, whitelist: window.YETT_WHITELIST }, g = { blacklisted: [] }, r = [], y = new MutationObserver(function (t) { for (var e = 0; e < t.length; e++)for (var i = t[e].addedNodes, n = function (t) { var n = i[t]; if (1 === n.nodeType && "SCRIPT" === n.tagName && !n.hasAttribute("data-noblock")) { var e = n.src, r = n.type; if (a(e, r)) { g.blacklisted.push(n.cloneNode()), n.type = b; n.addEventListener("beforescriptexecute", function t(e) { n.getAttribute("type") === b && e.preventDefault(), n.removeEventListener("beforescriptexecute", t) }), n.parentElement && n.parentElement.removeChild(n) } } }, r = 0; r < i.length; r++)n(r) }); y.observe(document.documentElement, { childList: !0, subtree: !0 }); var o = document.createElement; document.createElement = function () { for (var t = arguments.length, e = new Array(t), n = 0; n < t; n++)e[n] = arguments[n]; if ("script" !== e[0].toLowerCase()) return o.bind(document).apply(void 0, e); var r = o.bind(document).apply(void 0, e), i = r.setAttribute.bind(r); try { Object.defineProperties(r, { src: { get: function () { return r.getAttribute("src") }, set: function (t) { return a(t, r.type) && !r.hasAttribute("data-noblock") && i("type", b), i("src", t), !0 } }, type: { set: function (t) { var e = a(r.src, r.type) && !r.hasAttribute("data-noblock") ? b : t; return i("type", e), !0 } } }), r.setAttribute = function (t, e) { "type" === t || "src" === t ? r[t] = e : HTMLScriptElement.prototype.setAttribute.call(r, t, e) } } catch (t) { console.warn("Yett: unable to prevent script execution for script src ", r.src, ".\n", 'A likely cause would be because you are using a third-party browser extension that monkey patches the "document.createElement" function.') } return r }; var m = new RegExp("[|\\{}()[\\]^$+*?.]", "g"); t.unblock = function () { for (var t = arguments.length, n = new Array(t), e = 0; e < t; e++)n[e] = arguments[e]; n.length < 1 ? (v.blacklist = [], v.whitelist = []) : (v.blacklist && (v.blacklist = v.blacklist.filter(function (e) { return n.every(function (t) { return "string" == typeof t ? !e.test(t) : t instanceof RegExp ? e.toString() !== t.toString() : void 0 }) })), v.whitelist && (v.whitelist = v.whitelist.concat(n.map(function (e) { if ("string" == typeof e) { var n = ".*" + e.replace(m, "\\$&") + ".*"; if (v.whitelist.every(function (t) { return t.toString() !== n.toString() })) return new RegExp(n) } else if (e instanceof RegExp && v.whitelist.every(function (t) { return t.toString() !== e.toString() })) return e; return null }).filter(Boolean)))); for (var r = document.querySelectorAll('script[type="'.concat(b, '"]')), i = 0; i < r.length; i++) { var a = r[i]; f(a) && (a.type = "application/javascript", g.blacklisted.push(a), a.parentElement.removeChild(a)) } for (var o = g.blacklisted.length - 1; 0 <= o; --o) { var l = g.blacklisted[o]; if (f(l)) { var c = document.createElement("script"); c.setAttribute("src", l.src), c.setAttribute("type", "application/javascript"), document.head.appendChild(c), g.blacklisted.splice(o, 1) } } if (v.blacklist && v.blacklist.length < 1 && y.disconnect(), h) for (var u = document.querySelectorAll('script[type="javascript/inlineblocked"]'), s = 0; s < u.length; s++) { var d = u[s], p = document.createElement("script"); p.type = "text/javascript", p.innerText = d.innerText, d.parentNode.replaceChild(p, d) } }, Object.defineProperty(t, "__esModule", { value: !0 }) }); </script>
+    <title>EMPRESA DE PUERTAS AUTOMÁTICAS MARBELLA</title>
+    <meta name="description"
+        content="¿Buscas una empresa de protección de hogar en Marbella? Dudetec es la empresa que necesitas si lo que quieres es aumentar la seguridad de tu hora.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EMPRESA DE PUERTAS AUTOMÁTICAS MARBELLA">
+    <meta property="og:url" content="https://www.dudetec.net/">
+    <meta property="og:description"
+        content="¿Buscas una empresa de protección de hogar en Marbella? Dudetec es la empresa que necesitas si lo que quieres es aumentar la seguridad de tu hora.">
+    <meta property="og:image" content="https://www.dudetec.net/uploads/NYeOhliQ/puertas-seccionales8s.jpg">
+    <link rel='canonical' href='index.html' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='uploads/kl4zDRtN/favicon.ico' />
+    <link rel="stylesheet"
+        href="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/css/grids.css?1694005268039">
+    <link rel="stylesheet"
+        href="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/css/hcaptcha.css?1694005268039">
+    <link rel="stylesheet" href="assets/user-style.css@1687864404.css">
+    <link rel="stylesheet" id="style_site" href="assets/sitestyle.css@1687864404.css">
+    <link rel="stylesheet"
+        href="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/css/external-libs.css?1694005268039">
+    <!--[if lt IE 9]><script src="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/js/html5shiv.js"></script><script src="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/js/respond.js"></script><![endif]-->
+    <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.getRegistrations().then(function (registrations) { for (registration in registrations) { registration.unregister(); } }); }</script>
+    <link rel="preconnect" href="https://site-assets.cdnmns.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.prod.extra-cdn.com/" crossorigin>
+    <script>window.ASSETSURL = 'https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be';</script>
+    <script src="https://api.maptiler.com/maps/streets/leaflet.js"></script>
+    <link href="https://api.maptiler.com/maps/streets/leaflet.css" rel="stylesheet">
+</head>
+
+<body id="p9533" data-dateformat='d/m/Y' data-req="lazyload,quicklink">
+
+
+
+
+
+    <div id="r5001" class="row designRow">
+        <div class="container container-fluid">
+            <div class="col col-sm-12">
+                <header data-onlynavigation="true">
+                    <div id="r4450" class="row ">
+                        <div class="container container-fluid">
+                            <div id="c2999" class="col col-sm-12 Col col-md-1 hidden-md hidden-sm"></div>
+                            <div id="c4068" class="col col-md-5 col-sm-6 col-lg-3 flexCol">
+                                <div class="module autospacer"></div>
+                                <div class="flexWrap"> <a href="index.html" title="" aria-label=""
+                                        class="imageModuleWrap" id="w_m4819" data-track-event="click"
+                                        data-track-action="internal_link_clicked">
+                                        <img id="m4819" class="module image"
+                                            src="uploads/kl4zDRtN/354x0_544x0/logo2.png" alt="Dudetec logo"
+                                            data-author="" /></a></div>
+                                <div class="module autospacer"></div>
+                            </div>
+                            <div id="c1979" class="col col-sm-6 col-md-7 col-lg-21 flexCol">
+                                <div class="module autospacer"></div>
+                                <div class="flexWrap">
+                                    <nav id="m5000" class="module nav"
+                                        data-settings="vertical=false,direction=right,push=true,activeParent=true,verticalNav-md=true,verticalNav-lg=false,verticalNav-sm=false"
+                                        tabindex="-1">
+                                        <ul class="navContainer">
+                                            <li class=" active"> <a href="index.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Inicio</a> </li>
+                                            <li class=""> <a href="puertas.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Puertas</a> </li>
+                                            <li class=""> <a href="seguridad.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Seguridad</a> </li>
+                                            <li class=""> <a href="contacto.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Contacto</a> </li>
+                                            <li class=" hidden-lg hidden-md hidden-sm"> <a href="gracias.html"
+                                                    data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Gracias</a> </li>
+                                            <li class=" hidden-lg hidden-md hidden-sm"> <a href="aviso-legal.html"
+                                                    data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Aviso Legal</a> </li>
+                                            <li class=" hidden-lg hidden-md hidden-sm"> <a
+                                                    href="politica-de-privacidad.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Política de Privacidad</a>
+                                            </li>
+                                            <li class=" hidden-lg hidden-md hidden-sm"> <a
+                                                    href="politica-de-cookies.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Política de Cookies</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="module autospacer"></div>
+                            </div>
+                            <div id="c4124" class="col col-sm-12 Col col-md-1 hidden-md hidden-sm"></div>
+                        </div>
+                    </div>
+                </header>
+                <div id="r5002" class="row designRow">
+                    <div class="container container-fluid">
+                        <div class="col col-sm-12">
+                            <div id="r2074" class="row ">
+                                <div class="container container-fluid">
+                                    <div id="c7707" class="col col-sm-12 col-lg-6 col-md-7 flexCol">
+                                        <div class="module autospacer"></div>
+                                        <div class="flexWrap">
+                                            <div class="module text">
+                                                <h1 class="darkspottext" style="text-align: left;">Empresa de puertas
+                                                    automáticas EN Marbella</h1>
+                                            </div>
+                                            <div id="m7490" class="module text">
+                                                <p class="darksmallspottext" style="text-align: left;">DU DETEC S.L.
+                                                    lleva más de 35<span style="font-weight: bold;">&nbsp;años
+                                                        ofreciendo soluciones para nuestros clientes</span>. Desde las
+                                                    puertas más simples hasta los diseños más exclusivos, o dispositivos
+                                                    de control de acceso, y todo tipo de accesorios.</p>
+                                            </div> <a id="m9480" class="module button" href="contacto.html" title=""
+                                                role="button" data-track-event="click"
+                                                data-track-action="internal_link_clicked"> <span
+                                                    class="buttonLabel labelRight">Contacto</span> </a>
+                                        </div>
+                                        <div class="module autospacer"></div>
+                                    </div>
+                                    <div id="c9602" class="col col-sm-12 col-lg-6 col-md-5 Col Col Col Col Col"
+                                        data-req="parallax,parallax,parallax,parallax,parallax,parallax,parallax,parallax">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="r3421" class="row ">
+                            <div class="container container-fluid">
+                                <div class="col col-sm-12 col-lg-4 col-md-3">
+                                    <div id="m2374" class="module divider " data-animate="fadeInLeft"></div>
+                                </div>
+                                <div class="col col-sm-12 col-lg-4 col-md-6">
+                                    <div class="module text">
+                                        <h2 class="subtitle" style="text-align: center;">Protección óptima para su
+                                            hogar o negocio</h2>
+                                    </div>
+                                </div>
+                                <div class="col col-sm-12 col-lg-4 col-md-3">
+                                    <div id="m3182" class="module divider " data-animate="fadeInRight"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="r4939" class="row ">
+                            <div class="container container-fixed">
+                                <div class="col col-md-6 col-lg-6 col-sm-12">
+                                    <div class="module text">
+                                        <p class="bodytext">En DU DETEC S.L. ponemos a su disposición una gran
+                                            variedad de productos de fabricación propia en<span
+                                                style="font-weight: bold;"> hierro o madera,</span> tanto para
+                                            viviendas unifamiliares, como para comunidades de vecinos, gracias a
+                                            nuestros sistemas especializados que nos proporciona el grupo <span
+                                                style="font-weight: bold;">FAAC</span> <span
+                                                style="font-weight: bold;">Professionals</span>, del cual somos
+                                            distribuidores oficiales.</p>
+                                        <p class="bodytext">&nbsp;</p>
+                                        <p class="bodytext">Una de las bases de DU DETEC S.L. es ofrecer a nuestros
+                                            clientes la <span style="font-weight: bold;">máxima seguridad para sus
+                                                hogares o negocios</span> con la mayor comodidad posible. Es por
+                                            ello que ofrecemos también sistemas de aperturas mediante telemando con
+                                            control de cada usuario, controles de accesos tanto para seguridad como
+                                            control de empleados, <span style="font-weight: bold;">sistemas
+                                                novedosos</span> como la apertura desde teléfonos móvil y <span
+                                                style="font-weight: bold;">todos los accesorios de seguridad y
+                                                aperturas disponibles en el mercado.</span></p>
+                                    </div>
+                                </div>
+                                <div class="col col-md-6 col-lg-6 col-sm-12"><a href="index.html#"
+                                        rel="nofollow noopener" onclick="return false" style="cursor: default;"
+                                        class="imageModuleWrap" id="w_m4903" data-track-event="click"
+                                        data-track-action="internal_link_clicked"> <img id="m4903" class="module image "
+                                            src="uploads/CvyFR5RU/737x0_555x0/slide2.jpg" alt="Dudetec puerta madera"
+                                            data-author="" /></a></div>
+                            </div>
+                        </div>
+                        <div id="r2924" class="row bgfilter">
+                            <div class="container container-fixed">
+                                <div class="col col-sm-12">
+                                    <div class="module text">
+                                        <p class="headline" style="text-align: center;">¿Tu casa es tan segura como
+                                            crees? Siéntete cómodo en tu hogar con DU DETEC S.L.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="container container-fixed">
+
+                                <div class="col img-faac">
+                                    <img src="uploads/faac/faac2.png" alt="faac2">
+                                </div>
+
+                                <div class="col img-faac">
+                                    <img src="uploads/faac/faac4.png" alt="faac4">
+                                </div>
+
+                                <div class="col img-faac">
+                                    <img src="uploads/faac/faac3.png" alt="faac3">
+                                </div>
+
+                                <div class="col img-faac">
+                                    <img src="uploads/faac/clemsa2.png" alt="clemsa2">
+                                </div>
+
+                                <div class="col img-faac">
+                                    <img src="uploads/faac/faac5.png" alt="faac5">
+                                </div>
+
+                                <div class="col img-faac">
+                                    <img src="uploads/faac/hormann2.png" alt="hormann2">
+                                </div>
+
+                                <div class="col img-faac">
+                                    <img src="uploads/faac/faac-pro.png" alt="faac-pro">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="r3462" class="row ">
+                            <div class="container container-fluid">
+
+                                <div id="c8728" class="col col-sm-12 col-lg-5 col-md-6">
+                                    <div id="m8120" class="" data-url="?m=m8120" data-req="mapbox-gl,leaflet,osmap"
+                                        data-animate="">
+
+                                        <div class="">
+
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d283.566975406322!2d-4.99357708745468!3d36.47702775062899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xd732a3940b98c27%3A0x6157cc69d088ad0!2zQy4gSm9zw6kgRWNoZWdhcmF5LCAzNywgMjk2NzAgTWFyYmVsbGEsIE3DoWxhZ2EsIEVzcGHDsWE!3m2!1d36.477125099999995!2d-4.9934746!5e0!3m2!1ses!2sve!4v1694565199851!5m2!1ses!2sve"
+                                                width="527" height="460" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                                style="background-color: blue;"></iframe>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="c2851" class="col col-sm-12 col-lg-7 col-md-6 flexCol">
+                                    <div class="module autospacer"></div>
+                                    <div class="flexWrap">
+                                        <div id="m4608" class="module text">
+                                            <h3 class="smallsubtitle">Formulario de contacto</h3>
+                                        </div>
+                                        <form method="post" id="m1320" class="module form" data-url="?m=m1320"
+                                            data-req="form,ext-https://js.hcaptcha.com/1/api.js?onload=formsInitHcaptcha&render=explicit"
+                                            data-settings="margin=1" data-track-action="custom_form"
+                                            onsubmit="return _monoForm.submitForm(this);">
+                                            <div class="fields clear">
+                                                <div class="field w50 "> <label for="m1320_field_0"></label> <input
+                                                        type="text" name="field_0" autocomplete="on" id="m1320_field_0"
+                                                        placeholder="Nombre*" data-required="true" /> </div>
+                                                <div class="field w50 "> <label for="m1320_field_1"></label> <input
+                                                        type="text" data-type="email" name="field_1"
+                                                        autocomplete="email" id="m1320_field_1" placeholder="Email*"
+                                                        data-required="true" /> </div>
+                                                <div class="field w100 "> <label for="m1320_field_2"></label>
+                                                    <textarea name="field_2" id="m1320_field_2"
+                                                        placeholder="Mensaje"></textarea>
+                                                </div> <input type="hidden" name="__requestToken"
+                                                    value="7762b3510cbc015eb167e252e5d82dfcd9a78eefdf924bb62d8fa97f4ce0a6e0" />
+                                                <div class="field veiled" style="display:none;height:0px" tabindex="-1">
+                                                    <textarea name="dfa42e0d" placeholder="Lorem ipsum"></textarea>
+                                                </div> <input type="hidden" name="_ha_seed" value="dfa42e0d" />
+                                            </div>
+                                            <div class="optins clear">
+                                                <div class="field w100 optin">
+                                                    <div class="form_option"><input type="checkbox" name="optin_field_0"
+                                                            id="m1320_optin_field_0" value="1"
+                                                            data-required="true" /><span class="label_optin_field_0"><a
+                                                                class="optinLink" target="_blank" rel="noopener"
+                                                                href="politica-de-privacidad.html"
+                                                                data-track-event="click"
+                                                                data-track-action="internal_link_clicked">He leído y
+                                                                aceptado la Política de Privacidad *</a></span>
+                                                    </div>
+                                                </div>
+                                                <div class="field w100 optin">
+                                                    <div class="form_option"><input type="checkbox" name="optin_field_1"
+                                                            id="m1320_optin_field_1" value="1" /><span
+                                                            class="label_optin_field_1">Autorizo a
+                                                            contactarme por email o por cualquier medio con fines
+                                                            comerciales</span> </div>
+                                                </div>
+                                            </div>
+                                            <div class="h-captcha" data-sitekey="b95e219b-fbb6-40de-b93b-6a9b1a873c5f"
+                                                data-callback="onHcaptchaSuccess"></div>
+                                            <div id="errors_m1320"> </div> <input type="hidden" name="form_m1320"
+                                                value="1"> <input type="submit" class="button" value="Enviar">
+                                        </form>
+                                    </div>
+                                    <div class="module autospacer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div id="r4248" class="row ">
+                    <div class="container container-fluid">
+                        <div id="c5783" class="col col-sm-12 col-md-1 Col hidden-md hidden-sm Col"></div>
+                        <div id="c8038" class="col col-sm-12 col-lg-4 col-md-6 flexCol">
+                            <div class="module autospacer"></div>
+                            <div class="flexWrap"> <a href="index.html#" rel="nofollow noopener" onclick="return false"
+                                    style="cursor: default;" class="imageModuleWrap" id="w_m4336"
+                                    data-track-event="click" data-track-action="internal_link_clicked">
+                                    <img id="m4336" class="module image" src="uploads/kl4zDRtN/707x0_773x0/logo2.png"
+                                        alt="Dudetec logo" data-author="" /></a></div>
+                            <div class="module autospacer"></div>
+                            <div class="flexWrap">
+                                <div id="m8285" class="module text">
+                                    <p class="footertext" style="text-align: center;"><a href="aviso-legal.html"
+                                            data-track-event="click" data-track-action="internal_link_clicked">Aviso
+                                            Legal</a> &nbsp; &nbsp;&nbsp;<a href="politica-de-privacidad.html"
+                                            data-track-event="click" data-track-action="internal_link_clicked">Política
+                                            de
+                                            Privacidad</a>&nbsp; &nbsp; &nbsp; <a href="politica-de-cookies.html"
+                                            data-track-event="click" data-track-action="internal_link_clicked">Política
+                                            de Cookies</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="c8619" class="col col-sm-12 col-lg-7 col-md-6 flexCol">
+                            <div class="module autospacer"></div>
+                            <div class="flexWrap"> <a href="index.html#" rel="nofollow noopener" onclick="return false"
+                                    style="cursor: default;" class="imageModuleWrap" id="w_m3550"
+                                    data-track-event="click" data-track-action="internal_link_clicked">
+
+                                    <img id="m3550" class="module image" src="uploads/Zxidyg6Q/737x0_1463x0/unnamed.png"
+                                        alt="PROGRAMA KIT DIGITAL COFINANCIADO POR LOS FONDOS NEXT GENERATION (EU) DEL MECANISMO DE RECUPERACIÓN Y RESILENCIA "
+                                        data-author="" /></a></div>
+                            <div class="module autospacer"></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="row brandfooter">
+                <button id="optOutButton" class="optout-button visible"
+                    style="position: absolute !important;">Cookies</button>
+                <div class="container container-fluid">
+                    <div class="col col-md-8 col-lg-8 col-sm-12 text-left"> &copy; 2023 DU DETEC S.L. Todos los
+                        derechos reservados </div>
+                    <div class="col col-md-4 col-lg-4 col-sm-12 text-right"> Producido por <a
+                            href="https://www.beedigital.es/" rel="nofollow noopener" data-track-event="click"
+                            data-track-action="link_clicked">BeeDIGITAL</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="optOutBar" class="infobar-wrapper" data-settings="bottom" style="display: none;">
+        <button id="optoutbar-close" class="infobar-close" aria-label="Cookies" style="background: none;">×</button>
+        <div class="infobar">
+            <div class="cookie-row text">
+                <h4 class="cookie-headline">Identificador de consentimiento</h4>
+                <p class="cookie-description">Guardamos un identificador (ID) de consentimiento para poder documentar y
+                    rastrear el consentimiento del visitante. Este identificador es aleatorio y completamente anónimo.
+                    En caso de que desees solicitar una prueba de tu consentimiento en este sitio web, facilítanos el
+                    identificador de consentimiento. Ten en cuenta que si borras las «cookies» de tu navegador, dicho
+                    identificador se borrará también y ya no podremos rastrear el consentimiento.</p>
+                <p class="cookie-readmore">Tu identificador de consentimiento es: pudanrh5-1pgr-4d7m-q3hj-0z1r7ubhd8gs
+                </p>
+                <h4 class="cookie-headline push-top">Retiro del consentimiento</h4>
+                <p class="cookie-description">Al hacer clic en el botón de este «banner», revocas el consentimiento que
+                    has dado anteriormente para cargar «cookies» en este sitio web. La próxima vez que visites el sitio
+                    web, el «banner» de notificación de «cookies» volverá a aparecer y podrás seleccionar nuevamente tus
+                    preferencias de «cookies».</p>
+            </div>
+
+            <div class="cookie-row buttons">
+                <div class="cookie-checkboxes"></div>
+                <div class="cookie-buttons">
+                    <a id="revoke-consent">Revocar consentimiento de cookies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div> <a href='index.html#' data-req="scrollTop" class='scrollIcon hidden bottom_right' data-track-event="click"
+        data-track-action="internal_link_clicked"> <span></span> </a>
+    <script nomodule
+        src="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/js/loader-polyfills.js?1694005268039"></script>
+    <script async defer
+        src="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/js/loader.js?1694005268039"></script>
+    <script
+        type='application/ld+json'>{"@context":"http://schema.org","@type":"LocalBusiness","@id":"https://www.dudetec.net/#global_business","name":"DU DETEC S.L.","address":{"@type":"PostalAddress","streetAddress":"Calle JOSE ECHEGARAY, 37","addressLocality":"Marbella","addressRegion":"M\u00c1LAGA","postalCode":"29670","addressCountry":"Espa\u00f1a"},"email":"info@dudetec.com","telephone":"952781753","description":"Lo m\u00e1s importante eres t\u00fa.","url":"https://www.dudetec.net","image":"https://www.dudetec.net/uploads/NYeOhliQ/puertas-seccionales8s.jpg","logo":"https://www.dudetec.net/uploads/kl4zDRtN/logo2.png"}</script>
+
+    <script>
+        document.getElementById("optOutButton").onclick = function () {
+
+            document.getElementById("optOutBar").style.display = "block";
+        }
+
+        document.getElementById("optoutbar-close").onclick = function () {
+            document.getElementById("optOutBar").style.display = "none";
+        }
+
+        document.getElementById("revoke-consent").onclick = function () {
+            document.getElementById("optOutBar").style.display = "none";
+        }
+
+    </script>
+
+</body>
+
+</html>

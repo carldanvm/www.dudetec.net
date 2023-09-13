@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es" data-currency="EUR" data-lang="es" data-countrycode="es_ES"
+    data-rHash="eb9dc009821f5ebf31f56ec6ed3af8bd" dir="auto">
+
+<head>
+    <meta charset="UTF-8" />
+    <script>window.isCookieOptIn = false; window.whitelistedDomains = ["cdnmns\\.com", "hcaptcha", "youtube\\.com", "ytimg\\.com", "extra\\-cdn\\.com"];</script>
+    <script> var doNoTrack = localStorage.getItem('mono_donottrack'); window.YETT_WHITELIST = [/.*/]; window.YETT_UNBLOCKINLINE = true; if (window.isCookieOptIn && doNoTrack === null || String(doNoTrack) === 'true') { window.YETT_WHITELIST = [new RegExp('(' + window.location.host + '|^)/assets/js(?!/reseller/padigital(-test)?)'),].concat(window.whitelistedDomains.map(function (domain) { return new RegExp(domain); })); } !function (t, e) { "object" == typeof exports && "undefined" != typeof module ? e(exports) : "function" == typeof define && define.amd ? define(["exports"], e) : e((t = t || self).yett = {}) }(this, function (t) { "use strict"; window.MutationObserver || (window.MutationObserver = function (m) { function a(t) { this.i = [], this.m = t } function w(t) { var e, n = { type: null, target: null, addedNodes: [], removedNodes: [], previousSibling: null, nextSibling: null, attributeName: null, attributeNamespace: null, oldValue: null }; for (e in t) n[e] !== m && t[e] !== m && (n[e] = t[e]); return n } function o(r, i) { var a = l(r, i); return function (t) { var e = t.length; if (i.a && 3 === r.nodeType && r.nodeValue !== a.a && t.push(new w({ type: "characterData", target: r, oldValue: a.a })), i.b && a.b && k(t, r, a.b, i.f), i.c || i.g) var n = function (b, t, e, h) { function v(t, e, n, r, i) { var a, o, l, c = t.length - 1; for (i = -~((c - i) / 2); l = t.pop();)a = n[l.j], o = r[l.l], h.c && i && Math.abs(l.j - l.l) >= c && (b.push(w({ type: "childList", target: e, addedNodes: [a], removedNodes: [a], nextSibling: a.nextSibling, previousSibling: a.previousSibling })), i--), h.b && o.b && k(b, a, o.b, h.f), h.a && 3 === a.nodeType && a.nodeValue !== o.a && b.push(w({ type: "characterData", target: a, oldValue: o.a })), h.g && g(a, o) } function g(t, e) { for (var n, r, i, a, o, l = t.childNodes, c = e.c, u = l.length, s = c ? c.length : 0, d = 0, p = 0, f = 0; p < u || f < s;)(a = l[p]) === (o = (i = c[f]) && i.node) ? (h.b && i.b && k(b, a, i.b, h.f), h.a && i.a !== m && a.nodeValue !== i.a && b.push(w({ type: "characterData", target: a, oldValue: i.a })), r && v(r, t, l, c, d), h.g && (a.childNodes.length || i.c && i.c.length) && g(a, i), p++, f++) : (y = !0, n || (n = {}, r = []), a && (n[i = S(a)] || (n[i] = !0, -1 === (i = x(c, a, f, "node")) ? h.c && (b.push(w({ type: "childList", target: t, addedNodes: [a], nextSibling: a.nextSibling, previousSibling: a.previousSibling })), d++) : r.push({ j: p, l: i })), p++), o && o !== l[p] && (n[i = S(o)] || (n[i] = !0, -1 === (i = x(l, o, p)) ? h.c && (b.push(w({ type: "childList", target: e.node, removedNodes: [o], nextSibling: c[f + 1], previousSibling: c[f - 1] })), d--) : r.push({ j: i, l: f })), f++)); r && v(r, t, l, c, d) } var y; return g(t, e), y }(t, r, a, i); !n && t.length === e || (a = l(r, i)) } } function k(t, e, n, r) { for (var i, a, o = {}, l = e.attributes, c = l.length; c--;)a = (i = l[c]).name, r && r[a] === m || (u(e, i) !== n[a] && t.push(w({ type: "attributes", target: e, attributeName: a, oldValue: n[a], attributeNamespace: i.namespaceURI })), o[a] = !0); for (a in n) o[a] || t.push(w({ target: e, type: "attributes", attributeName: a, oldValue: n[a] })) } function l(t, r) { var i = !0; return function t(n) { var e = { node: n }; return !r.a || 3 !== n.nodeType && 8 !== n.nodeType ? (r.b && i && 1 === n.nodeType && (e.b = c(n.attributes, function (t, e) { return r.f && !r.f[e.name] || (t[e.name] = u(n, e)), t }, {})), i && (r.c || r.a || r.b && r.g) && (e.c = function (t, e) { for (var n = [], r = 0; r < t.length; r++)n[r] = e(t[r], r, t); return n }(n.childNodes, t)), i = r.g) : e.a = n.nodeValue, e }(t) } function S(e) { try { return e.id || (e.mo_id = e.mo_id || n++) } catch (t) { try { return e.nodeValue } catch (t) { return n++ } } } function c(t, e, n) { for (var r = 0; r < t.length; r++)n = e(n, t[r], r, t); return n } function x(t, e, n, r) { for (; n < t.length; n++)if ((r ? t[n][r] : t[n]) === e) return n; return -1 } a._period = 30, a.prototype = { observe: function (t, e) { for (var n = { b: !!(e.attributes || e.attributeFilter || e.attributeOldValue), c: !!e.childList, g: !!e.subtree, a: !(!e.characterData && !e.characterDataOldValue) }, r = this.i, i = 0; i < r.length; i++)r[i].s === t && r.splice(i, 1); e.attributeFilter && (n.f = c(e.attributeFilter, function (t, e) { return t[e] = !0, t }, {})), r.push({ s: t, o: o(t, n) }), this.h || function (n) { !function t() { var e = n.takeRecords(); e.length && n.m(e, n), n.h = setTimeout(t, a._period) }() }(this) }, takeRecords: function () { for (var t = [], e = this.i, n = 0; n < e.length; n++)e[n].o(t); return t }, disconnect: function () { this.i = [], clearTimeout(this.h), this.h = null } }; var t = document.createElement("i"); t.style.top = 0; var u = (t = "null" != t.attributes.style.value) ? function (t, e) { return e.value } : function (t, e) { return "style" !== e.name ? e.value : t.style.cssText }, n = 1; return a }(void 0)); function a(e, t) { var n = e && (!t || t !== b) && (!v.blacklist || v.blacklist.some(function (t) { return t.test(e) })) && (!v.whitelist || v.whitelist.every(function (t) { return !t.test(e) })); return n && -1 === r.indexOf(e) && (r.push(e), console.info("Script src '".concat(e, "' is blocked"))), n } function f(t) { var e = t.getAttribute("src"); return v.blacklist && v.blacklist.every(function (t) { return !t.test(e) }) || v.whitelist && v.whitelist.some(function (t) { return t.test(e) }) } var b = "javascript/blocked", h = window.YETT_UNBLOCKINLINE || !1, v = { blacklist: window.YETT_BLACKLIST, whitelist: window.YETT_WHITELIST }, g = { blacklisted: [] }, r = [], y = new MutationObserver(function (t) { for (var e = 0; e < t.length; e++)for (var i = t[e].addedNodes, n = function (t) { var n = i[t]; if (1 === n.nodeType && "SCRIPT" === n.tagName && !n.hasAttribute("data-noblock")) { var e = n.src, r = n.type; if (a(e, r)) { g.blacklisted.push(n.cloneNode()), n.type = b; n.addEventListener("beforescriptexecute", function t(e) { n.getAttribute("type") === b && e.preventDefault(), n.removeEventListener("beforescriptexecute", t) }), n.parentElement && n.parentElement.removeChild(n) } } }, r = 0; r < i.length; r++)n(r) }); y.observe(document.documentElement, { childList: !0, subtree: !0 }); var o = document.createElement; document.createElement = function () { for (var t = arguments.length, e = new Array(t), n = 0; n < t; n++)e[n] = arguments[n]; if ("script" !== e[0].toLowerCase()) return o.bind(document).apply(void 0, e); var r = o.bind(document).apply(void 0, e), i = r.setAttribute.bind(r); try { Object.defineProperties(r, { src: { get: function () { return r.getAttribute("src") }, set: function (t) { return a(t, r.type) && !r.hasAttribute("data-noblock") && i("type", b), i("src", t), !0 } }, type: { set: function (t) { var e = a(r.src, r.type) && !r.hasAttribute("data-noblock") ? b : t; return i("type", e), !0 } } }), r.setAttribute = function (t, e) { "type" === t || "src" === t ? r[t] = e : HTMLScriptElement.prototype.setAttribute.call(r, t, e) } } catch (t) { console.warn("Yett: unable to prevent script execution for script src ", r.src, ".\n", 'A likely cause would be because you are using a third-party browser extension that monkey patches the "document.createElement" function.') } return r }; var m = new RegExp("[|\\{}()[\\]^$+*?.]", "g"); t.unblock = function () { for (var t = arguments.length, n = new Array(t), e = 0; e < t; e++)n[e] = arguments[e]; n.length < 1 ? (v.blacklist = [], v.whitelist = []) : (v.blacklist && (v.blacklist = v.blacklist.filter(function (e) { return n.every(function (t) { return "string" == typeof t ? !e.test(t) : t instanceof RegExp ? e.toString() !== t.toString() : void 0 }) })), v.whitelist && (v.whitelist = v.whitelist.concat(n.map(function (e) { if ("string" == typeof e) { var n = ".*" + e.replace(m, "\\$&") + ".*"; if (v.whitelist.every(function (t) { return t.toString() !== n.toString() })) return new RegExp(n) } else if (e instanceof RegExp && v.whitelist.every(function (t) { return t.toString() !== e.toString() })) return e; return null }).filter(Boolean)))); for (var r = document.querySelectorAll('script[type="'.concat(b, '"]')), i = 0; i < r.length; i++) { var a = r[i]; f(a) && (a.type = "application/javascript", g.blacklisted.push(a), a.parentElement.removeChild(a)) } for (var o = g.blacklisted.length - 1; 0 <= o; --o) { var l = g.blacklisted[o]; if (f(l)) { var c = document.createElement("script"); c.setAttribute("src", l.src), c.setAttribute("type", "application/javascript"), document.head.appendChild(c), g.blacklisted.splice(o, 1) } } if (v.blacklist && v.blacklist.length < 1 && y.disconnect(), h) for (var u = document.querySelectorAll('script[type="javascript/inlineblocked"]'), s = 0; s < u.length; s++) { var d = u[s], p = document.createElement("script"); p.type = "text/javascript", p.innerText = d.innerText, d.parentNode.replaceChild(p, d) } }, Object.defineProperty(t, "__esModule", { value: !0 }) }); </script>
+    <title>Puertas automáticas en Marbella</title>
+    <meta name="description"
+        content="¿Necesitas una puerta de seguridad para tu hogar, empresa, comunidad, etc en Marbella? En Dudetec contamos con la solución que necesitas ¡Consultanos!">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Puertas automáticas en Marbella">
+    <meta property="og:url" content="https://www.dudetec.net/puertas">
+    <meta property="og:description"
+        content="¿Necesitas una puerta de seguridad para tu hogar, empresa, comunidad, etc en Marbella? En Dudetec contamos con la solución que necesitas ¡Consultanos!">
+    <meta property="og:image" content="https://www.dudetec.net/uploads/NYeOhliQ/puertas-seccionales8s.jpg">
+    <link rel='canonical' href='puertas.html' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='uploads/kl4zDRtN/favicon.ico' />
+    <link rel="stylesheet"
+        href="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/css/grids.css?1694420612747">
+    <link rel="stylesheet"
+        href="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/css/hcaptcha.css?1694420612747">
+    <link rel="stylesheet" href="assets/user-style.css@1687864404.css">
+    <link rel="stylesheet" id="style_site" href="assets/sitestyle.css@1687864404.css">
+    <link rel="stylesheet"
+        href="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/css/external-libs.css?1694420612747">
+    <!--[if lt IE 9]><script src="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/js/html5shiv.js"></script><script src="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/js/respond.js"></script><![endif]-->
+    <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.getRegistrations().then(function (registrations) { for (registration in registrations) { registration.unregister(); } }); }</script>
+    <link rel="preconnect" href="https://site-assets.cdnmns.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.prod.extra-cdn.com/" crossorigin>
+    <script>window.ASSETSURL = 'https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be';</script>
+</head>
+
+<body id="p5754" data-dateformat='d/m/Y' data-req="lazyload,quicklink">
+    <div id="r5001" class="row designRow">
+        <div class="container container-fluid">
+            <div class="col col-sm-12">
+                <header data-onlynavigation="true">
+                    <div id="r4450" class="row ">
+                        <div class="container container-fluid">
+                            <div id="c2999" class="col col-sm-12 Col col-md-1 hidden-md hidden-sm"></div>
+                            <div id="c4068" class="col col-md-5 col-sm-6 col-lg-3 flexCol">
+                                <div class="module autospacer"></div>
+                                <div class="flexWrap"> <a href="index.html" title="" aria-label=""
+                                        class="imageModuleWrap" id="w_m4819" data-track-event="click"
+                                        data-track-action="internal_link_clicked">
+                                        <img id="m4819" class="module image"
+                                            src="uploads/kl4zDRtN/354x0_544x0/logo2.png" alt="Dudetec logo"
+                                            data-author="" /> </noscript> </a></div>
+                                <div class="module autospacer"></div>
+                            </div>
+                            <div id="c1979" class="col col-sm-6 col-md-7 col-lg-21 flexCol">
+                                <div class="module autospacer"></div>
+                                <div class="flexWrap">
+                                    <nav id="m5000" class="module nav"
+                                        data-settings="vertical=false,direction=right,push=true,activeParent=true,verticalNav-md=true,verticalNav-lg=false,verticalNav-sm=false"
+                                        tabindex="-1">
+                                        <ul class="navContainer">
+                                            <li class=""> <a href="index.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Inicio</a> </li>
+                                            <li class=" active"> <a href="puertas.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Puertas</a> </li>
+                                            <li class=""> <a href="seguridad.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Seguridad</a> </li>
+                                            <li class=""> <a href="contacto.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Contacto</a> </li>
+                                            <li class=" hidden-lg hidden-md hidden-sm"> <a href="gracias.html"
+                                                    data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Gracias</a> </li>
+                                            <li class=" hidden-lg hidden-md hidden-sm"> <a href="aviso-legal.html"
+                                                    data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Aviso Legal</a> </li>
+                                            <li class=" hidden-lg hidden-md hidden-sm"> <a
+                                                    href="politica-de-privacidad.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Política de Privacidad</a>
+                                            </li>
+                                            <li class=" hidden-lg hidden-md hidden-sm"> <a
+                                                    href="politica-de-cookies.html" data-track-event="click"
+                                                    data-track-action="internal_link_clicked">Política de Cookies</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="module autospacer"></div>
+                            </div>
+                            <div id="c4124" class="col col-sm-12 Col col-md-1 hidden-md hidden-sm"></div>
+                        </div>
+                    </div>
+                </header>
+                <div id="r5002" class="row designRow">
+                    <div class="container container-fluid">
+                        <div class="col col-sm-12">
+                            <div id="r1420" class="row ">
+                                <div class="container container-fluid">
+                                    <div id="c9469" class="col col-sm-12 col-md-6 Col Col Col"
+                                        data-req="parallax,parallax,parallax" style="background-image: none;"></div>
+                                    <div id="c7032" class="col col-sm-12 col-md-6">
+                                        <div id="m5013" class="module text">
+
+                                            <h1 class="headline">Puertas automáticas en Marbella</h1>
+                                        </div>
+                                        <div id="m4244" class="module text">
+                                            <p class="bodytext">En DU DETEC S.L. tenemos gran variedad de <span
+                                                    style="font-weight: bold;">productos de fabricación propia</span>
+                                                diseñados en <span style="font-weight: bold;">hierro, madera y
+                                                    aluminio</span>, donde encontrarás desde los diseños más simples
+                                                hasta los sistemas más exclusivos, que nos permitan ajustarnos a tus
+                                                necesidades.</p>
+                                        </div>
+                                        <div id="m6947" class="module text">
+                                            <p class="smallsubtitle">Security</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="r2656" class="row ">
+                                <div class="container container-fluid">
+                                    <div class="col col-sm-12 col-md-4">
+                                        <div id="m1675" class="module divider " data-animate="fadeInLeft"></div>
+                                    </div>
+                                    <div class="col col-sm-12 col-md-4">
+                                        <div class="module text">
+                                            <h2 class="subtitle" style="text-align: center;">Puertas de acceso</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-12 col-md-4">
+                                        <div id="m4528" class="module divider " data-animate="fadeInRight"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="r4856" class="row " data-animate="fadeInLeft">
+                                <div class="container container-fluid">
+                                    <div class="col col-lg-6 col-sm-12">
+                                        <div class="module text">
+                                            <h3 class="lightsubtitle">Puertas seccionales:</h3>
+                                        </div>
+                                        <div class="module text">
+                                            <p class="lightbodytext">La mejor solución para las aperturas hacia el techo
+                                                que existen, son las <span style="font-weight: bold;">puertas
+                                                    seccionales</span>, ya que se aprovecha al máximo todo el espacio
+                                                del que dispone el garaje.</p>
+                                            <p class="lightbodytext"><br>Puedes elegir entre diferentes acabados de
+                                                aluminio, ya que en DU DETEC S.L. trabajamos con las mejores firmas del
+                                                mercado como <span style="font-weight: bold;">HÖRMANN</span> y <span
+                                                    style="font-weight: bold;">Gavia Metal</span>, de manera que puedas
+                                                elegir entre sus múltiples acabados lacados, también con imitación a
+                                                madera. No obstante, si lo que te gusta es la madera natural, podemos
+                                                ofrecerte esa alternativa de fabricación única para tu puerta de
+                                                seguridad porque como fabricantes podemos realizar aquello que necesitas
+                                                de forma automatizada con nuestra firma <span
+                                                    style="font-weight: bold;">FAAC</span>.</p>
+                                            <p class="lightbodytext"><br>Sin duda, una parte importante para garantizar
+                                                una mayor durabilidad de la puerta de seguridad seccional es el
+                                                mantenimiento. Por eso, en DU DETEC S.L. disponemos de servicio técnico
+                                                especializado oficial de automatismo <span
+                                                    style="font-weight: bold;">FAAC</span> para atender cualquier tipo
+                                                de reparaciones que necesite tu puerta de seguridad.</p>
+                                        </div>
+                                    </div>
+
+                                    <div id="c2135" class="col col-lg-6 col-sm-12">
+
+                                        <div id="carousel1" class="carousel">
+
+                                            <div class="slides">
+                                                <div class="slide">
+
+                                                    <div>
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/rIN7AxX7/767x0_2560x0/puertas-seccionales11s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/s7XRQXM2/767x0_2560x0/puertas-seccionales12s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/vq8CM4WN/767x0_2560x0/puertas-seccionales10s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/b5Q8vliu/767x0_2560x0/puertas-seccionales9s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/NYeOhliQ/767x0_2560x0/puertas-seccionales8s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/Z6qQHzrl/767x0_2560x0/puertas-seccionales7s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/xOhcFG4E/767x0_2560x0/puertas-seccionales6s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/tnzYKFjy/767x0_2560x0/puertas-seccionales5s.jpg"
+                                                            alt="">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="slide">
+                                                    <div>
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/IxzczUjz/767x0_2560x0/puertas-seccionales4s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/bUsHzBtQ/767x0_2560x0/puertas-seccionales3s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/6YVuDozJ/767x0_2560x0/puertas-seccionales2s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/maSqdE9X/767x0_2560x0/puertas-seccionales1s.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button class="carousel__button carousel__button--left"
+                                                onclick="prevSlide('carousel1')">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                    viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #00128a
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                                                </svg>
+                                            </button>
+                                            <button class="carousel__button carousel__button--right"
+                                                onclick="nextSlide('carousel1')">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                    viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #00128a
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="r3359" class="row " data-animate="fadeInRight">
+                                <div class="container container-fluid">
+                                    <div class="col col-lg-6 col-sm-12">
+
+                                        <div id="carousel2" class="carousel">
+
+                                            <div class="slides">
+                                                <div class="slide">
+
+                                                    <div>
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/lxaISssP/767x0_2560x0/puertas-abatibles11s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/jdTJWyGY/767x0_2560x0/puertas-abatibles12s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/uLvlR7kh/767x0_2560x0/puertas-abatibles10s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/xpjNHsCr/767x0_2560x0/puertas-abatibles9s.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="slide">
+                                                    <div>
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/E3PBW7wN/767x0_2560x0/puertas-abatibles8s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/K9MZ5U5t/767x0_2560x0/puertas-abatibles7s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/8oz9MOBz/767x0_2560x0/puertas-abatibles6s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/iodurNvf/767x0_2560x0/puertas-abatibles5s.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="slide">
+                                                    <div>
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/O3GGyMzs/767x0_2560x0/puertas-abatibles4s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/UFQpjN8l/767x0_2560x0/puertas-abatibles3s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/mhrpqLaN/767x0_2560x0/puertas-abatibles2s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/sTRbMabI/767x0_2560x0/puertas-abatibles1s.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <button class="carousel__button carousel__button--left"
+                                                onclick="prevSlide('carousel2')">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                    viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #00128a
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                                                </svg>
+                                            </button>
+                                            <button class="carousel__button carousel__button--right"
+                                                onclick="nextSlide('carousel2')">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                    viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #00128a
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="col col-lg-6 col-sm-12">
+                                        <div class="module text">
+                                            <h3 class="lightsubtitle">Puertas abatibles</h3>
+                                        </div>
+                                        <div class="module text">
+                                            <p class="lightbodytext">Fabricamos la puerta de <span
+                                                    style="font-weight: bold;">diseño abatible</span> que necesites y
+                                                con la opción de poder elegir el tipo de material en la que la quieres.;
+                                                <span style="font-weight: bold;">madera, hierro o aluminio</span>, con
+                                                una gran cantidad de diseños disponible en nuestra firma <span
+                                                    style="font-weight: bold;">FAAC</span>.<br>Mediante un <span
+                                                    style="font-weight: bold;">brazo hidráulico o mecánico</span>, es
+                                                cómo funciona esta puerta, con la opción de elegir el sistema de
+                                                enterrado, una opción más elegante donde a través de los sistemas
+                                                soterrados, visualmente queda más limpio y despejado.
+                                            </p>
+                                            <p class="lightbodytext"><br>Elijas el sistema de puertas de seguridad que
+                                                elijas, siempre contarás con nuestro equipo de profesionales
+                                                cualificados para el mantenimiento y/o reparación de cualquiera de
+                                                nuestros sistemas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="r3756" class="row " data-animate="fadeInLeft">
+                                <div class="container container-fluid">
+                                    <div class="col col-lg-6 col-sm-12">
+                                        <div class="module text">
+                                            <h3 class="lightsubtitle">Puertas de cristal</h3>
+                                        </div>
+                                        <div class="module text">
+                                            <p class="lightbodytext">La ventaja de las <span
+                                                    style="font-weight: bold;">puertas de cristal</span>, es que se
+                                                adaptan a todo tipo de necesidades y entornos, tanto para exterior como
+                                                interior.</p>
+                                            <p class="lightbodytext"><br>Porque cada proyecto es único, te ofrecemos la
+                                                mejor solución y la funcionalidad más adecuada en cada <span
+                                                    style="font-weight: bold;">proyecto arquitectónico</span>,
+                                                personalizamos el acabado para ofrecerte lo que necesitas, mediante el
+                                                uso de cristal limpio, con fijos, y con la posibilidad de emplear
+                                                sistemas en acero inoxidables.</p>
+                                            <p class="lightbodytext"><br>Actualmente, las puertas de cristal no solo se
+                                                utilizan en comercios, también son una buena opción a la hora de darle
+                                                un toque de elegancia y distinción a las diferentes habitaciones dentro
+                                                de tu propia vivienda, siempre con la garantía que te ofrece nuestra
+                                                firma <span style="font-weight: bold;">FAAC</span>.</p>
+                                            <p class="lightbodytext"><br>Con DU DETEC S.L., tienes garantizada una vida
+                                                larga con el <span style="font-weight: bold;">mínimo
+                                                    mantenimiento</span> en cada uno de los sistemas que ofrecemos de
+                                                puerta de cristal.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col col-lg-6 col-sm-12">
+
+                                        <div id="carousel3" class="carousel">
+
+                                            <div class="slides">
+                                                <div class="slide">
+
+                                                    <div>
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/EjJRvspM/767x0_2560x0/puertas-cristal12s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/JKGHjMBA/767x0_2560x0/puertas-cristal11s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/jtGkVYif/767x0_2560x0/puertas-cristal10s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/8CDdrkKd/767x0_2560x0/puertas-cristal9s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/LEsfpr2p/159x0_296x0/puertas-cristal8s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/fCpg0fSu/767x0_2560x0/puertas-cristal7s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/56K6htze/767x0_2560x0/puertas-cristal6s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/waINiiVb/767x0_2560x0/puertas-cristal5s.jpg"
+                                                            alt="">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="slide">
+                                                    <div>
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/CONygo8Z/767x0_2560x0/puertas-cristal4s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/HsXLmsyR/767x0_2560x0/puertas-cristal3s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/Sumv7kYB/767x0_2560x0/puertas-cristal2s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/I42nVZ0R/767x0_2560x0/puertas-cristal1s.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button class="carousel__button carousel__button--left"
+                                                onclick="prevSlide('carousel3')">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                    viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #00128a
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                                                </svg>
+                                            </button>
+                                            <button class="carousel__button carousel__button--right"
+                                                onclick="nextSlide('carousel3')">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                    viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #00128a
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="r1370" class="row " data-animate="fadeInRight">
+
+                                <div class="container container-fluid">
+                                    <div class="col col-lg-6 col-sm-12">
+
+                                        <div id="carousel4" class="carousel">
+
+                                            <div class="slides">
+                                                <div class="slide">
+
+                                                    <div>
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/y45Jvefh/767x0_2560x0/puertas-correderas7s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/cIRie95J/767x0_2560x0/puertas-correderas8s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/wklJN32I/767x0_2560x0/puertas-correderas6s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/ExnCeK5k/767x0_2560x0/puertas-correderas5s.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="slide">
+                                                    <div>
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/QGQp20A0/767x0_2560x0/puertas-correderas4s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/UaS1uq5r/767x0_2560x0/puertas-correderas3s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/i2HBAQ54/767x0_2560x0/puertas-correderas2s.jpg"
+                                                            alt="">
+                                                        <img style="width: 139px; height:139px"
+                                                            src="uploads/iZDfiFJ9/767x0_2560x0/puertas-correderas1s.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <button class="carousel__button carousel__button--left"
+                                                onclick="prevSlide('carousel4')">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                    viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #00128a
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                                                </svg>
+                                            </button>
+                                            <button class="carousel__button carousel__button--right"
+                                                onclick="nextSlide('carousel4')">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                    viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #00128a
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+
+
+                                        <div id="m3459" class="module gallery" data-req="gallery,lightbox"
+                                            data-settings="imagecols=4,imagecols-md=4,imagecols-sm=2,arrows=true,margin=2,margin-md=2,margin-sm=6,imagenr=4,interval=5000"
+                                            data-before-text="Antes" data-after-text="Después" role="region">
+                                            <div class="slides">
+                                                <div class="slide">
+                                                    <ul class="pics clear">
+                                                        <li> <a href="uploads/y45Jvefh/767x0_2560x0/puertas-correderas7s.jpg"
+                                                                title="" data-track-event="click"
+                                                                data-track-action="internal_link_clicked"> <span
+                                                                    class="thumb"> <span class="thumbInner"> <img
+                                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII="
+                                                                            alt="Dudetec puerta co1" data-author="" />
+                                                                        <noscript
+                                                                            data-lazyload-src="/uploads/y45Jvefh/169x0_296x0/puertas-correderas7s.jpg"
+                                                                            data-lazyload-alt="Dudetec puerta co1"> <img
+                                                                                src="uploads/y45Jvefh/169x0_296x0/puertas-correderas7s.jpg"
+                                                                                alt="Dudetec puerta co1" data-author="">
+                                                                        </noscript> </span> </span> <span
+                                                                    class="bodytext caption"></span> </a> </li>
+                                                        <li> <a href="uploads/cIRie95J/767x0_2560x0/puertas-correderas8s.jpg"
+                                                                title="" data-track-event="click"
+                                                                data-track-action="internal_link_clicked"> <span
+                                                                    class="thumb"> <span class="thumbInner"> <img
+                                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII="
+                                                                            alt="Dudetec puerta co2" data-author="" />
+                                                                        <noscript
+                                                                            data-lazyload-src="/uploads/cIRie95J/169x0_296x0/puertas-correderas8s.jpg"
+                                                                            data-lazyload-alt="Dudetec puerta co2"> <img
+                                                                                src="uploads/cIRie95J/169x0_296x0/puertas-correderas8s.jpg"
+                                                                                alt="Dudetec puerta co2" data-author="">
+                                                                        </noscript> </span> </span> <span
+                                                                    class="bodytext caption"></span> </a> </li>
+                                                        <li> <a href="uploads/wklJN32I/767x0_2560x0/puertas-correderas6s.jpg"
+                                                                title="" data-track-event="click"
+                                                                data-track-action="internal_link_clicked"> <span
+                                                                    class="thumb"> <span class="thumbInner"> <img
+                                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII="
+                                                                            alt="Dudetec puerta co3" data-author="" />
+                                                                        <noscript
+                                                                            data-lazyload-src="/uploads/wklJN32I/169x0_296x0/puertas-correderas6s.jpg"
+                                                                            data-lazyload-alt="Dudetec puerta co3"> <img
+                                                                                src="uploads/wklJN32I/169x0_296x0/puertas-correderas6s.jpg"
+                                                                                alt="Dudetec puerta co3" data-author="">
+                                                                        </noscript> </span> </span> <span
+                                                                    class="bodytext caption"></span> </a> </li>
+                                                        <li> <a href="uploads/ExnCeK5k/767x0_2560x0/puertas-correderas5s.jpg"
+                                                                title="" data-track-event="click"
+                                                                data-track-action="internal_link_clicked"> <span
+                                                                    class="thumb"> <span class="thumbInner"> <img
+                                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII="
+                                                                            alt="Dudetec puerta co4" data-author="" />
+                                                                        <noscript
+                                                                            data-lazyload-src="/uploads/ExnCeK5k/169x0_296x0/puertas-correderas5s.jpg"
+                                                                            data-lazyload-alt="Dudetec puerta co4"> <img
+                                                                                src="uploads/ExnCeK5k/169x0_296x0/puertas-correderas5s.jpg"
+                                                                                alt="Dudetec puerta co4" data-author="">
+                                                                        </noscript> </span> </span> <span
+                                                                    class="bodytext caption"></span> </a> </li>
+                                                        <li> <a href="uploads/QGQp20A0/767x0_2560x0/puertas-correderas4s.jpg"
+                                                                title="" data-track-event="click"
+                                                                data-track-action="internal_link_clicked"> <span
+                                                                    class="thumb"> <span class="thumbInner"> <img
+                                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII="
+                                                                            alt="Dudetec puerta co5" data-author="" />
+                                                                        <noscript
+                                                                            data-lazyload-src="/uploads/QGQp20A0/169x0_296x0/puertas-correderas4s.jpg"
+                                                                            data-lazyload-alt="Dudetec puerta co5"> <img
+                                                                                src="uploads/QGQp20A0/169x0_296x0/puertas-correderas4s.jpg"
+                                                                                alt="Dudetec puerta co5" data-author="">
+                                                                        </noscript> </span> </span> <span
+                                                                    class="bodytext caption"></span> </a> </li>
+                                                        <li> <a href="uploads/UaS1uq5r/767x0_2560x0/puertas-correderas3s.jpg"
+                                                                title="" data-track-event="click"
+                                                                data-track-action="internal_link_clicked"> <span
+                                                                    class="thumb"> <span class="thumbInner"> <img
+                                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII="
+                                                                            alt="Dudetec puerta co6" data-author="" />
+                                                                        <noscript
+                                                                            data-lazyload-src="/uploads/UaS1uq5r/169x0_296x0/puertas-correderas3s.jpg"
+                                                                            data-lazyload-alt="Dudetec puerta co6"> <img
+                                                                                src="uploads/UaS1uq5r/169x0_296x0/puertas-correderas3s.jpg"
+                                                                                alt="Dudetec puerta co6" data-author="">
+                                                                        </noscript> </span> </span> <span
+                                                                    class="bodytext caption"></span> </a> </li>
+                                                        <li> <a href="uploads/i2HBAQ54/767x0_2560x0/puertas-correderas2s.jpg"
+                                                                title="" data-track-event="click"
+                                                                data-track-action="internal_link_clicked"> <span
+                                                                    class="thumb"> <span class="thumbInner"> <img
+                                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII="
+                                                                            alt="Dudetec puerta co7" data-author="" />
+                                                                        <noscript
+                                                                            data-lazyload-src="/uploads/i2HBAQ54/169x0_296x0/puertas-correderas2s.jpg"
+                                                                            data-lazyload-alt="Dudetec puerta co7"> <img
+                                                                                src="uploads/i2HBAQ54/169x0_296x0/puertas-correderas2s.jpg"
+                                                                                alt="Dudetec puerta co7" data-author="">
+                                                                        </noscript> </span> </span> <span
+                                                                    class="bodytext caption"></span> </a> </li>
+                                                        <li> <a href="uploads/iZDfiFJ9/767x0_2560x0/puertas-correderas1s.jpg"
+                                                                title="" data-track-event="click"
+                                                                data-track-action="internal_link_clicked"> <span
+                                                                    class="thumb"> <span class="thumbInner"> <img
+                                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII="
+                                                                            alt="Dudetec puerta co8" data-author="" />
+                                                                        <noscript
+                                                                            data-lazyload-src="/uploads/iZDfiFJ9/169x0_296x0/puertas-correderas1s.jpg"
+                                                                            data-lazyload-alt="Dudetec puerta co8"> <img
+                                                                                src="uploads/iZDfiFJ9/169x0_296x0/puertas-correderas1s.jpg"
+                                                                                alt="Dudetec puerta co8" data-author="">
+                                                                        </noscript> </span> </span> <span
+                                                                    class="bodytext caption"></span> </a> </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-6 col-sm-12">
+                                        <div class="module text">
+                                            <h3 class="lightsubtitle">Puertas correderas</h3>
+                                        </div>
+                                        <div class="module text">
+                                            <p class="lightbodytext">Disponemos de muchas posibilidades en cuanto a
+                                                diseño y fabricación de este tipo de <span
+                                                    style="font-weight: bold;">puertas de seguridad</span>. Es además
+                                                una de las soluciones más seguras en cuanto a la <span
+                                                    style="font-weight: bold;">funcionalidad</span> se refiere, ya que
+                                                soporta bien el trabajo con puertas de seguridad pesadas de uso
+                                                intensivo como pueden tener las instaladas en las comunidades.</p>
+                                            <p class="lightbodytext"><br>Nuestra firma <span
+                                                    style="font-weight: bold;">FAAC</span> ofrece también gran cantidad
+                                                de automatismos para que puedas elegir según las características de la
+                                                puerta de seguridad, la más adecuada.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="r2417" class="row bgfilter">
+                                <div class="container container-fixed">
+                                    <div class="col col-sm-12">
+                                        <div class="module text">
+                                            <p class="headline" style="text-align: center;">En caso de no encontrar la
+                                                puerta de seguridad que necesitas, puedes <a href="contacto.html"
+                                                    data-track-event="click"
+                                                    data-track-action="internal_link_clicked">contactarnos</a> para
+                                                ayudarte.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div id="r4248" class="row ">
+                        <div class="container container-fluid">
+                            <div id="c5783" class="col col-sm-12 col-md-1 Col hidden-md hidden-sm Col"></div>
+                            <div id="c8038" class="col col-sm-12 col-lg-4 col-md-6 flexCol">
+                                <div class="module autospacer"></div>
+                                <div class="flexWrap"> <a href="puertas.html#" rel="nofollow noopener"
+                                        onclick="return false" style="cursor: default;" class="imageModuleWrap"
+                                        id="w_m4336" data-track-event="click" data-track-action="internal_link_clicked">
+                                        <img id="m4336" class="module image"
+                                            src="uploads/kl4zDRtN/707x0_773x0/logo2.png" alt="Dudetec logo"
+                                            data-author="" /></a></div>
+                                <div class="module autospacer"></div>
+                                <div class="flexWrap">
+                                    <div id="m8285" class="module text">
+                                        <p class="footertext" style="text-align: center;"><a href="aviso-legal.html"
+                                                data-track-event="click" data-track-action="internal_link_clicked">Aviso
+                                                Legal</a> &nbsp; &nbsp;&nbsp;<a href="politica-de-privacidad.html"
+                                                data-track-event="click"
+                                                data-track-action="internal_link_clicked">Política de
+                                                Privacidad</a>&nbsp; &nbsp; &nbsp; <a href="politica-de-cookies.html"
+                                                data-track-event="click"
+                                                data-track-action="internal_link_clicked">Política de Cookies</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="c8619" class="col col-sm-12 col-lg-7 col-md-6 flexCol">
+                                <div class="module autospacer"></div>
+                                <div class="flexWrap"> <a href="puertas.html#" rel="nofollow noopener"
+                                        onclick="return false" style="cursor: default;" class="imageModuleWrap"
+                                        id="w_m3550" data-track-event="click" data-track-action="internal_link_clicked">
+                                        <img id="m3550" class="module image"
+                                            src="uploads/Zxidyg6Q/737x0_1463x0/unnamed.png"
+                                            alt="PROGRAMA KIT DIGITAL COFINANCIADO POR LOS FONDOS NEXT GENERATION (EU) DEL MECANISMO DE RECUPERACIÓN Y RESILENCIA "
+                                            data-author="" /> </a></div>
+                                <div class="module autospacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="row brandfooter">
+                    <div class="container container-fluid">
+                        <button id="optOutButton" class="optout-button visible"
+                            style="position: absolute !important;">Cookies</button>
+                        <div class="col col-md-8 col-lg-8 col-sm-12 text-left"> &copy; 2023 DU DETEC S.L. Todos los
+                            derechos reservados </div>
+                        <div class="col col-md-4 col-lg-4 col-sm-12 text-right"> Producido por <a
+                                href="https://www.beedigital.es/" rel="nofollow noopener" data-track-event="click"
+                                data-track-action="link_clicked">BeeDIGITAL</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="optOutBar" class="infobar-wrapper" data-settings="bottom" style="display: none;">
+            <button id="optoutbar-close" class="infobar-close" aria-label="Cookies" style="background: none;">×</button>
+            <div class="infobar">
+                <div class="cookie-row text">
+                    <h4 class="cookie-headline">Identificador de consentimiento</h4>
+                    <p class="cookie-description">Guardamos un identificador (ID) de consentimiento para poder
+                        documentar y
+                        rastrear el consentimiento del visitante. Este identificador es aleatorio y completamente
+                        anónimo.
+                        En caso de que desees solicitar una prueba de tu consentimiento en este sitio web, facilítanos
+                        el
+                        identificador de consentimiento. Ten en cuenta que si borras las «cookies» de tu navegador,
+                        dicho
+                        identificador se borrará también y ya no podremos rastrear el consentimiento.</p>
+                    <p class="cookie-readmore">Tu identificador de consentimiento es:
+                        pudanrh5-1pgr-4d7m-q3hj-0z1r7ubhd8gs
+                    </p>
+                    <h4 class="cookie-headline push-top">Retiro del consentimiento</h4>
+                    <p class="cookie-description">Al hacer clic en el botón de este «banner», revocas el consentimiento
+                        que
+                        has dado anteriormente para cargar «cookies» en este sitio web. La próxima vez que visites el
+                        sitio
+                        web, el «banner» de notificación de «cookies» volverá a aparecer y podrás seleccionar nuevamente
+                        tus
+                        preferencias de «cookies».</p>
+                </div>
+
+                <div class="cookie-row buttons">
+                    <div class="cookie-checkboxes"></div>
+                    <div class="cookie-buttons">
+                        <a id="revoke-consent">Revocar consentimiento de cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <a href='puertas.html#' data-req="scrollTop" class='scrollIcon hidden bottom_right' data-track-event="click"
+        data-track-action="internal_link_clicked"> <span></span> </a>
+    <script nomodule
+        src="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/js/loader-polyfills.js?1694420612747"></script>
+    <script async defer
+        src="https://site-assets.cdnmns.com/c4776f6351648920c0020dce141fe4be/js/loader.js?1694420612747"></script>
+    <script
+        type='application/ld+json'>{"@context":"http://schema.org","@type":"LocalBusiness","@id":"https://www.dudetec.net/#global_business","name":"DU DETEC S.L.","address":{"@type":"PostalAddress","streetAddress":"Calle JOSE ECHEGARAY, 37","addressLocality":"Marbella","addressRegion":"M\u00c1LAGA","postalCode":"29670","addressCountry":"Espa\u00f1a"},"email":"info@dudetec.com","telephone":"952781753","description":"Lo m\u00e1s importante eres t\u00fa.","url":"https://www.dudetec.net","image":"https://www.dudetec.net/uploads/NYeOhliQ/puertas-seccionales8s.jpg","logo":"https://www.dudetec.net/uploads/kl4zDRtN/logo2.png"}</script>
+
+
+    <script>
+
+        var currentSlides = {};
+
+        function prevSlide(carouselId) {
+            var slides = document.querySelectorAll('#' + carouselId + '.carousel .slide');
+            var slideContainer = document.querySelector('#' + carouselId + '.carousel .slides');
+            currentSlides[carouselId] = ((currentSlides[carouselId] || 0) - 1 + slides.length) % slides.length;
+            slideContainer.style.transform = 'translateX(-' + (currentSlides[carouselId] * 100) + '%)';
+        }
+
+        function nextSlide(carouselId) {
+            var slides = document.querySelectorAll('#' + carouselId + '.carousel .slide');
+            var slideContainer = document.querySelector('#' + carouselId + '.carousel .slides');
+            currentSlides[carouselId] = ((currentSlides[carouselId] || 0) + 1) % slides.length;
+            slideContainer.style.transform = 'translateX(-' + (currentSlides[carouselId] * 100) + '%)';
+        }
+
+    </script>
+
+    <script>
+        document.getElementById("optOutButton").onclick = function () {
+
+            document.getElementById("optOutBar").style.display = "block";
+        }
+
+        document.getElementById("optoutbar-close").onclick = function () {
+            document.getElementById("optOutBar").style.display = "none";
+        }
+
+        document.getElementById("revoke-consent").onclick = function () {
+            document.getElementById("optOutBar").style.display = "none";
+        }
+
+    </script>
+
+</body>
+
+</html>
