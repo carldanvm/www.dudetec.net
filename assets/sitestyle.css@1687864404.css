@@ -2436,10 +2436,10 @@ nav>li.active>a {
 }
 
 #p6977 #c3557 {
-    background-image: url(../uploads/RcJQ1CjE/767x0_1250x0/puertas-509.webp);
+    background-image: url(../uploads/RcJQ1CjE/767x0_1250x0/puertas-509.webp) !important;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 100%;
+    
     background-attachment: fixed;
 }
 
@@ -2727,7 +2727,7 @@ nav>li.active>a {
 }
 
 #p6792 #c3445 {
-    background-image: url(../uploads/OAKRG4aE/767x0_1250x0/puertas-511.jpg);
+    background-image: url(../uploads/OAKRG4aE/767x0_1250x0/puertas-511.jpg) !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 100%;
@@ -3382,7 +3382,7 @@ nav>li.active>a {
 
 .carousel__button {
     position: absolute;
-    top: 50%;
+    top: 46%;
     transform: translateY(-50%);
     background-color: rgba(255,255,255,0.9);
     border: none;
@@ -3394,7 +3394,7 @@ nav>li.active>a {
 }
 
 .carousel__button--right {
-    right: 10px;
+    right: 33px;
 }
 
 #carousel2 {
