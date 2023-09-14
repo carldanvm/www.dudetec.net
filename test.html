@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.preview {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#imgPreview {
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+</style>
+</head>
+<body>
+
+<img class="myImage" src="uploads/6YVuDozJ/159x0_296x0/puertas-seccionales2s.jpg" alt="Tu Imagen" style="width:100px;height:auto;">
+<img class="myImage" src="uploads/cIRie95J/767x0_2560x0/puertas-correderas8s.jpg" alt="Tu Imagen" style="width:100px;height:auto;">
+<!-- Puedes agregar más imágenes aquí -->
+
+<div class="preview" onclick="this.style.display='none'">
+    <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;font-size:30px;">X</span>
+    <img id="imgPreview">
+</div>
+
+<script>
+var images = document.getElementsByClassName("myImage");
+for(var i = 0; i < images.length; i++) {
+    images[i].onclick = function(){
+        document.getElementsByClassName("preview")[0].style.display = "block";
+        document.getElementById("imgPreview").src = this.src;
+    }
+}
+</script>
+
+</body>
+</html>
